@@ -1,0 +1,72 @@
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Dùng để reset các phần tự mặc định trong trình duyệt */
+
+body{
+    font-family: PlayfairDisplay;
+    font-size: 1.25em;
+    /* Mặc định sẽ là 16px */
+    /* 1em = 16px */
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: white;
+    cursor: url(../images/Car.png), default;
+}
+
+header{
+    text-align: center;
+    padding: 16px 0;
+    color: white;
+    background-color: #2ed573;
+}
+
+.container{
+    display: flex;
+    min-height: 75vh;
+    /* Độ cao bằng 75% của khung trang web */
+
+}
+
+aside{
+    padding: 24px 32px;
+}
+
+.menu{
+    position: sticky;
+    top: 16px;
+    /* 2 dòng trên: Giúp cho menu bị đísnh vào đầu trang web */
+    display: flex;
+    flex-direction: column;
+    /* 2 dòng trên giúp cho menu sắp xếp theo hàng dọc */
+    row-gap: 16px;
+    /* Khoảng cách giữa các phần tử */
+}
+
+.vr{
+    width: 5px;
+    background-color: #2ed573;
+}
+
+main{
+    flex: 1;
+    /* Chiếm độ rộng là phần còn lại */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    text-align: center;
+    padding: 16px 0;
+    color: white;
+    background-color: #212529;
+}
